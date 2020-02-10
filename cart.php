@@ -2,8 +2,8 @@
 session_start();
 
 if(isset($_POST["product"])){
-  if($_POST["product"] == "1" ||$_POST["product"] == "2" || $_POST["product"] == "3" ) {
-    setcookie("product", $_POST["product"], 3600);
+  if($_POST["product"] == "1" || $_POST["product"] == "2" || $_POST["product"] == "3" ) {
+    setcookie("product", $_POST["product"], time()+3600);
   }
 }
 
